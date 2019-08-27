@@ -1,0 +1,34 @@
+This code is implemented to add texts to the desired video files (.mp4 or .avi)
+For other video formats the necessary FOURCC code can be added into the modifyV$
+
+In order to execute the code, install python3.7 and opencv2 if necessary
+
+execution with minimum parameters: python3 text_adding.py video_name
+For additional parameters, have a look at the following
+
+usage: text_adding.py [-h] [-d DURATION] [-t TEXT] [--text_color TEXT_COLOR]
+                      [--bg_color BG_COLOR] [--alpha ALPHA] [--scale SCALE]
+                      [-o OUTPUT] [-p POSITION POSITION]
+                      video
+
+Video Text Adding
+
+positional arguments:
+  video                 path of the video
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DURATION, --duration DURATION
+                        text duration in seconds
+  -t TEXT, --text TEXT  text to be added. default random
+  --text_color TEXT_COLOR
+                        color of the text eg. '(50,50,50)'
+  --bg_color BG_COLOR   color of the text background eg. '(50,50,50)'
+  --alpha ALPHA         transparency of the text background (default 90
+                        percent)
+  --scale SCALE         scale of the text font
+  -o OUTPUT, --output OUTPUT
+                        name of the output file
+  -p POSITION POSITION, --position POSITION POSITION
+                        x,y coordinates of the text location in the form 'x
+                        y'. default random
